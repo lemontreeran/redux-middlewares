@@ -1,5 +1,5 @@
 {
-  "name": "lego-form",
+  "name": "redux-middlewares",
   "version": "0.0.1",
   "description": "Micro-Frontend Boilerplate, with React & TS & Webpack",
   "repository": {
@@ -8,17 +8,12 @@
   },
   "license": "MIT",
   "keywords": [
-    "Legoble",
-    "form",
     "react",
+    "redux",
     "webpack",
     "typescript"
   ],
   "author": "wx-chevalier@github",
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true
-  },
   "lint-staged": {
     "*.{ts,tsx,scss,less,md}": [
       "prettier --write",
@@ -44,6 +39,7 @@
   "devDependencies": {
     "@types/jest": "24.0.17",
     "@types/react-dom": "^16.8.5",
+    "@wx-fc/app-config": "^0.2.7",
     "autoprefixer": "9.6.1",
     "awesome-typescript-loader": "^5.2.1",
     "copy-webpack-plugin": "^5.0.4",
@@ -83,8 +79,6 @@
     "workerize-loader": "^1.0.4"
   },
   "private": true,
-  "workspaces": [
-    "./packages/antd-intl",
-    "./packages/redux-pack-fsa"
-  ]
+  "workspaces": [],
+  "prettier": "@wx-fc/prettier-config/semi"
 }

@@ -1,59 +1,96 @@
-![](https://i.postimg.cc/0NXHs82R/image.png)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-# react-snippets
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/FE-Kits/redux-middlewares">
+    <img src="https://s2.ax1x.com/2020/01/20/1PgTWd.png" alt="Logo" width="80" height="80">
+  </a>
 
-React Snippets in TypeScript, 该项目承接自 [fe-boilerplates](https://github.com/wx-chevalier/fe-boilerplates)，其配套书籍参阅 [React 实战](https://ngte-web.gitbook.io/i/react/react)。
+  <h3 align="center">redux-middlewares</h3>
 
-# Nav | 导航
+  <p align="center">
+    Common custom middlewares for Redux apps.
+    <br />
+    <a href="https://github.com/FE-Kits/redux-middlewares"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/FE-Kits/redux-middlewares">View Demo</a>
+    ·
+    <a href="https://github.com/FE-Kits/redux-middlewares/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/FE-Kits/redux-middlewares/issues">Request Feature</a>
+  </p>
+</p>
 
-## TOC
+<!-- ABOUT THE PROJECT -->
 
-- [antd-intl](./packages/antd-intl): 基于 Antd 与 react-intl 的国际化案例
+# Introduction
 
-- [context](./packages/context): React Context 案例
+Common custom middlewares for Redux apps.
 
-- [HoCs](./packages/hocs): React HoCs 案例
+> 参阅《[现代 Web 全栈开发与工程架构](https://ng-tech.icu/Web-Series/)》了解 Redux 开发实战。
 
-- [Hooks](./packages/hooks): React Hooks 案例
+## Nav | 导航
 
-## 关联项目
+- redux-middleware-pack-fsa: Promise 处理中间件
 
-- [react-snippets](https://github.com/wx-chevalier/react-snippets): React Snippets(.ts/.tsx), about design patterns/techniques used while developing with React and TypeScript.
+- redux-middleware-throttle：节流中间件
 
-- [vue-snippets](https://github.com/wx-chevalier/vue-snippets): Vue Snippets(.js/.ts), about design patterns/techniques used while developing with Vue and JavaScript/TypeScript.
+# About
 
-- [m-fe-husky-config](https://github.com/wx-chevalier/m-fe-configs)：Common Dev Configs(ESLint, Prettier, Husky, etc.) for Micro-Frontend Apps
+<!-- ROADMAP -->
 
-- [m-fe-rtw](https://github.com/wx-chevalier/m-fe-rtw): Micro-Frontend boilerplate with React & TypeScript & Webpack, for complicated cooperative applications. | 微前端项目模板
+## Roadmap
 
-- [m-fe-vtw](https://github.com/wx-chevalier/m-fe-vtw): Micro-Frontend boilerplate with Vue & TypeScript & Webpack, for complicated cooperative applications. | 微前端项目模板
+See the [open issues](https://github.com/FE-Kits/redux-middlewares/issues) for a list of proposed features (and known issues).
 
-- [fractal-components](https://github.com/wx-chevalier/fractal-components): Massive Fractal Components in Several Libraries(Vanilla, React, Vue, Weapp), for building your great apps easily again
+<!-- CONTRIBUTING -->
 
-- [Legoble](https://github.com/wx-chevalier/Legoble): Build your apps like stacking Lego blocks 💫 总想自己实现一款可视化配置的动态应用构建工具，动态表单、动态布局、动态报告、动态规则、动态选择、动态流程
+## Contributing
 
-# Home & More | 延伸阅读
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-![](https://i.postimg.cc/59QVkFPq/image.png)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-您可以通过以下导航来在 Gitbook 中阅读笔者的系列文章，涵盖了技术资料归纳、编程语言与理论、Web 与大前端、服务端开发与基础架构、云计算与大数据、数据科学与人工智能、产品设计等多个领域：
+<!-- LICENSE -->
 
-- 知识体系：《[Awesome Lists](https://ngte-al.gitbook.io/i/)》、《[Awesome CheatSheets](https://ngte-ac.gitbook.io/i/)》、《[Awesome Interviews](https://github.com/wx-chevalier/Awesome-Interviews)》、《[Awesome RoadMaps](https://github.com/wx-chevalier/Awesome-RoadMaps)》、《[Awesome MindMaps](https://github.com/wx-chevalier/Awesome-MindMaps)》、《[Awesome-CS-Books-Warehouse](https://github.com/wx-chevalier/Awesome-CS-Books-Warehouse)》
+## License
 
-- 编程语言：《[编程语言理论](https://ngte-pl.gitbook.io/i/)》、《[Java 实战](https://ngte-pl.gitbook.io/i/java/java)》、《[JavaScript 实战](https://ngte-pl.gitbook.io/i/javascript/javascript)》、《[Go 实战](https://ngte-pl.gitbook.io/i/go/go)》、《[Python 实战](https://ngte-pl.gitbook.io/i/python/python)》、《[Rust 实战](https://ngte-pl.gitbook.io/i/rust/rust)》
+Distributed under the MIT License. See `LICENSE` for more information.
 
-- 软件工程、模式与架构：《[编程范式与设计模式](https://ngte-se.gitbook.io/i/)》、《[数据结构与算法](https://ngte-se.gitbook.io/i/)》、《[软件架构设计](https://ngte-se.gitbook.io/i/)》、《[整洁与重构](https://ngte-se.gitbook.io/i/)》、《[研发方式与工具](https://ngte-se.gitbook.io/i/)》
+<!-- ACKNOWLEDGEMENTS -->
 
-* Web 与大前端：《[现代 Web 开发基础与工程实践](https://ngte-web.gitbook.io/i/)》、《[数据可视化](https://ngte-fe.gitbook.io/i/)》、《[iOS](https://ngte-fe.gitbook.io/i/)》、《[Android](https://ngte-fe.gitbook.io/i/)》、《[混合开发与跨端应用](https://ngte-fe.gitbook.io/i/)》
+## Acknowledgements
 
-* 服务端开发实践与工程架构：《[服务端基础](https://ngte-be.gitbook.io/i/)》、《[微服务与云原生](https://ngte-be.gitbook.io/i/)》、《[测试与高可用保障](https://ngte-be.gitbook.io/i/)》、《[DevOps](https://ngte-be.gitbook.io/i/)》、《[Node](https://ngte-be.gitbook.io/i/)》、《[Spring](https://ngte-be.gitbook.io/i/)》、《[信息安全与渗透测试](https://ngte-be.gitbook.io/i/)》
+- [Awesome-Lists](https://github.com/wx-chevalier/Awesome-Lists): 📚 Guide to Galaxy, curated, worthy and up-to-date links/reading list for ITCS-Coding/Algorithm/SoftwareArchitecture/AI. 💫 ITCS-编程/算法/软件架构/人工智能等领域的文章/书籍/资料/项目链接精选。
 
-* 分布式基础架构：《[分布式系统](https://ngte-infras.gitbook.io/i/)》、《[分布式计算](https://ngte-infras.gitbook.io/i/)》、《[数据库](https://ngte-infras.gitbook.io/i/)》、《[网络](https://ngte-infras.gitbook.io/i/)》、《[虚拟化与编排](https://ngte-infras.gitbook.io/i/)》、《[云计算与大数据](https://ngte-infras.gitbook.io/i/)》、《[Linux 与操作系统](https://ngte-infras.gitbook.io/i/)》
+- [Awesome-CS-Books](https://github.com/wx-chevalier/Awesome-CS-Books): :books: Awesome CS Books/Series(.pdf by git lfs) Warehouse for Geeks, ProgrammingLanguage, SoftwareEngineering, Web, AI, ServerSideApplication, Infrastructure, FE etc. :dizzy: 优秀计算机科学与技术领域相关的书籍归档。
 
-* 数据科学，人工智能与深度学习：《[数理统计](https://ngte-aidl.gitbook.io/i/)》、《[数据分析](https://ngte-aidl.gitbook.io/i/)》、《[机器学习](https://ngte-aidl.gitbook.io/i/)》、《[深度学习](https://ngte-aidl.gitbook.io/i/)》、《[自然语言处理](https://ngte-aidl.gitbook.io/i/)》、《[工具与工程化](https://ngte-aidl.gitbook.io/i/)》、《[行业应用](https://ngte-aidl.gitbook.io/i/)》
+## Copyright & More | 延伸阅读
 
-* 产品设计与用户体验：《[产品设计](https://ngte-pd.gitbook.io/i/)》、《[交互体验](https://ngte-pd.gitbook.io/i/)》、《[项目管理](https://ngte-pd.gitbook.io/i/)》
+您还可以前往 [NGTE Books](https://ng-tech.icu/books/) 主页浏览包含知识体系、编程语言、软件工程、模式与架构、Web 与大前端、服务端开发实践与工程架构、分布式基础架构、人工智能与深度学习、产品运营与创业等多类目的书籍列表：
 
-* 行业应用：《[行业迷思](https://github.com/wx-chevalier/Business-Series)》、《[功能域](https://github.com/wx-chevalier/Business-Series)》、《[电子商务](https://github.com/wx-chevalier/Business-Series)》、《[智能制造](https://github.com/wx-chevalier/Business-Series)》
+![NGTE Books](https://s2.ax1x.com/2020/01/18/19uXtI.png)
 
-此外，前往 [xCompass](https://wx-chevalier.github.io/home/#/search) 交互式地检索、查找需要的文章/链接/书籍/课程；或者在在 [MATRIX 文章与代码索引矩阵](https://github.com/wx-chevalier/Developer-Zero-To-Mastery)中查看文章与项目源代码等更详细的目录导航信息。最后，你也可以关注微信公众号：『**某熊的技术之路**』以获取最新资讯。
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/FE-Kits/redux-middlewares.svg?style=flat-square
+[contributors-url]: https://github.com/FE-Kits/redux-middlewares/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/FE-Kits/redux-middlewares.svg?style=flat-square
+[forks-url]: https://github.com/FE-Kits/redux-middlewares/network/members
+[stars-shield]: https://img.shields.io/github/stars/FE-Kits/redux-middlewares.svg?style=flat-square
+[stars-url]: https://github.com/FE-Kits/redux-middlewares/stargazers
+[issues-shield]: https://img.shields.io/github/issues/FE-Kits/redux-middlewares.svg?style=flat-square
+[issues-url]: https://github.com/FE-Kits/redux-middlewares/issues
+[license-shield]: https://img.shields.io/github/license/FE-Kits/redux-middlewares.svg?style=flat-square
+[license-url]: https://github.com/FE-Kits/redux-middlewares/blob/master/LICENSE.txt

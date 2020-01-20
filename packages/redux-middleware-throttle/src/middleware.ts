@@ -17,7 +17,7 @@ function map(throttled: Record<string, any>, action: FsaAction, method: string) 
   return;
 }
 
-export default function middleware(
+export function middleware(
   defaultWait = 300,
   defaultThrottleOption: {
     /**

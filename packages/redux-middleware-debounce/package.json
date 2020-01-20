@@ -1,7 +1,7 @@
 {
-  "name": "redux-middleware-debounce",
-  "version": "0.0.1",
-  "description": "redux-middleware-debounce",
+  "name": "redux-middleware-debounced",
+  "version": "0.0.2",
+  "description": "redux-middleware-debounced",
   "repository": {
     "type": "git",
     "url": "https://github.com/FE-Kits/redux-middlewares"

@@ -9,7 +9,7 @@ Debounce allows you to discard a fast paced action from updating your state unti
 If you have a search that happens when someone types in a text box you can use this middleware to only fire your action after the user has stopped for a specified period of time.
 
 ```
-$ npm install --save redux-middleware-debounce
+$ npm install --save redux-middleware-debounced
 ```
 
 ## Usage
@@ -31,10 +31,10 @@ To enable Redux Debounce:
 
 ```js
 import { createStore, applyMiddleware } from 'redux';
-import createDebounce from 'redux-middleware-debounce';
+import createDebounce from 'redux-middleware-debounced';
 import rootReducer from './reducers/index';
 
-// create a store that has redux-middleware-debounce middleware enabled
+// create a store that has redux-middleware-debounced middleware enabled
 const createStoreWithMiddleware = applyMiddleware(createDebounce())(createStore);
 
 const store = createStoreWithMiddleware(rootReducer);
@@ -108,12 +108,12 @@ _Important_ - A cancel action will terminate in the middleware without propagati
 
 ### Debouncing a thunk
 
-If you want to use redux-middleware-debounce with redux-thunk add the meta object as a property to the thunk function and the debounced middleware should be applied before the thunk middleware.
+If you want to use redux-middleware-debounced with redux-thunk add the meta object as a property to the thunk function and the debounced middleware should be applied before the thunk middleware.
 
 ```js
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
-import createDebounce from 'redux-middleware-debounce';
+import createDebounce from 'redux-middleware-debounced';
 
 const store = createStore(rootReducer, applyMiddleware(createDebounce(), thunk));
 

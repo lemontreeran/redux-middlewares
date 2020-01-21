@@ -5,8 +5,8 @@ const timers = {};
 export function middleware(
   defaultWait: number = 300,
   {
-    leading,
-    trailing,
+    leading = false,
+    trailing = true,
     ignoreKeys = []
   }: {
     /**
@@ -22,6 +22,10 @@ export function middleware(
 ) {
   // tslint:disable-next-line: no-any
   return () => (next: any) => (action: FsaAction) => {
+    if (!action || !action.meta || !action.meta.debounce) {
+      return next(action);
+    }
+
     const { meta: { debounce = {}, key: metaKey = '' } = {}, type } = action;
 
     const {

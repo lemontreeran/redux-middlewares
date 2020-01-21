@@ -1,6 +1,6 @@
 {
   "name": "redux-middleware-debounced",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "redux-middleware-debounced",
   "repository": {
     "type": "git",

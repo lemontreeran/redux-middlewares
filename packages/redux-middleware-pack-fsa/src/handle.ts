@@ -1,4 +1,3 @@
-import * as deline from 'deline';
 import invariant from 'invariant';
 
 import { KEY, LIFECYCLE } from './constants';
@@ -23,10 +22,10 @@ function verifyHandlers(handlers: any, action: any) {
   Object.keys(handlers).forEach(key => {
     invariant(
       VALID_KEYS[key],
-      deline(`
+      `
       The handler for action ${action.type} had a ${key} property defined, but this is not 
       a valid key for a redux-pack handler. Valid keys are: ${Object.keys(VALID_KEYS)}
-    `)
+    `
     );
   });
 }
@@ -37,7 +36,7 @@ function safeMap(state: any, fn: any, action: any, name: any) {
       const result = fn(state, action);
       invariant(
         result !== undefined,
-        deline`
+        `
         The ${name} handler for action ${action.type} is expected to return a new state object.
       `
       );
@@ -50,7 +49,7 @@ function safeMap(state: any, fn: any, action: any, name: any) {
       // things on the handler object they aren't supposed to.
       invariant(
         false,
-        deline`
+        `
         The ${name} handler for action ${action.type} is expected to be a function, 
         but found ${typeof fn} instead.
       `
@@ -70,7 +69,7 @@ export function handle(startingState: any, action: any, handlers: HandlerMap) {
   if (lifecycle == null) {
     invariant(
       false,
-      deline`
+      `
       You used redux-pack's \`handle(...)\` function on the action ${action.type}, however, it
       doesn't appear to be an action that was dispatched by redux-pack. This is likely an error.
     `

@@ -2,7 +2,6 @@ import * as deline from 'deline';
 import invariant from 'invariant';
 
 import { KEY, LIFECYCLE } from './constants';
-import { FsaAction } from './middleware';
 
 const VALID_KEYS = {
   start: true,

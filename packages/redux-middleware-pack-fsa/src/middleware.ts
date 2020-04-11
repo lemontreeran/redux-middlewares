@@ -1,5 +1,3 @@
-import uuid from 'uuid';
-
 import { KEY, LIFECYCLE } from './constants';
 
 export interface FsaAction {
@@ -7,6 +5,18 @@ export interface FsaAction {
   payload: any;
   meta: any;
 }
+
+const genId = () => {
+  // Math.random should be unique because of its seeding algorithm.
+  // Convert it to base 36 (numbers + letters), and grab the first 9 characters
+  // after the decimal.
+  return (
+    '_' +
+    Math.random()
+      .toString(36)
+      .substr(2, 9)
+  );
+};
 
 export function isPromise(obj: any) {
   return !!obj && typeof obj.then === 'function';
@@ -19,6 +29,7 @@ function handleEventHook(meta: object, hook: string, ...args: any) {
     try {
       meta[hook](...args);
     } catch (e) {
+      // tslint:disable-next-line: no-console
       console.error(e);
     }
   }
@@ -29,7 +40,7 @@ function handlePromise(dispatch: Function, getState: Function, action: FsaAction
 
   // it is sometimes useful to be able to track the actions and associated promise lifecycle with a
   // sort of unique identifier. This is that.
-  const transactionId = uuid.v4();
+  const transactionId = genId();
   const startPayload = payload;
 
   dispatch({
